@@ -164,7 +164,16 @@ struct APIKeyConfigView: View {
     private func loadCurrentSettings() {
         let settings = SettingsManager.shared.settings
         selectedProvider = settings.customLLMProvider ?? .openai
-        selectedModel = settings.selectedModel ?? selectedProvider.availableModels.first ?? ""
+        
+        // 验证保存的模型是否在当前 provider 的可用模型列表中
+        // 如果不在（可能是旧的模型名称），则重置为第一个可用模型
+        if let savedModel = settings.selectedModel,
+           selectedProvider.availableModels.contains(savedModel) {
+            selectedModel = savedModel
+        } else {
+            selectedModel = selectedProvider.availableModels.first ?? ""
+        }
+        
         customBaseURL = settings.customBaseURL ?? ""
     }
     

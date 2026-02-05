@@ -37,7 +37,14 @@ enum LLMServiceFactory {
             }
             
             let baseURL = settings.customBaseURL
-            let model = settings.selectedModel ?? provider.availableModels.first ?? ""
+            // 验证保存的模型是否在可用列表中，如果不在则使用默认模型
+            let savedModel = settings.selectedModel
+            let model: String
+            if let saved = savedModel, provider.availableModels.contains(saved) {
+                model = saved
+            } else {
+                model = provider.availableModels.first ?? ""
+            }
             
             switch provider {
             case .openai:
