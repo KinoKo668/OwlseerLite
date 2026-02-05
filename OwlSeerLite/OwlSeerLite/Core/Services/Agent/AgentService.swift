@@ -81,6 +81,9 @@ final class AgentService: ObservableObject {
             currentStatus = .idle
         }
         
+        // 每次发送消息前刷新 LLM Provider，确保使用最新设置
+        refreshLLMProvider()
+        
         // 1. 检查 LLM 配置
         guard let llmProvider else {
             throw AgentError.noLLMConfigured
@@ -203,6 +206,9 @@ final class AgentService: ObservableObject {
             isProcessing = false
             currentStatus = .idle
         }
+        
+        // 每次发送消息前刷新 LLM Provider，确保使用最新设置
+        refreshLLMProvider()
         
         guard let llmProvider else {
             throw AgentError.noLLMConfigured
