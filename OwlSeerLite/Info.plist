@@ -6,6 +6,23 @@
 	<key>CFBundleDisplayName</key>
 	<string>OwlSeer</string>
 	
+	<!-- Scene Configuration for SwiftUI -->
+	<key>UIApplicationSceneManifest</key>
+	<dict>
+		<key>UIApplicationSupportsMultipleScenes</key>
+		<true/>
+		<key>UISceneConfigurations</key>
+		<dict/>
+	</dict>
+	
+	<!-- Launch Screen -->
+	<key>UILaunchScreen</key>
+	<dict/>
+	
+	<!-- Supports indirect input events -->
+	<key>UIApplicationSupportsIndirectInputEvents</key>
+	<true/>
+	
 	<!-- App Transport Security - Allow HTTPS connections -->
 	<key>NSAppTransportSecurity</key>
 	<dict>
@@ -86,19 +103,6 @@
 		</dict>
 	</dict>
 	
-	<!-- Privacy Usage Descriptions (if needed in future) -->
-	<!-- Uncomment if adding features that require these permissions -->
-	<!--
-	<key>NSCameraUsageDescription</key>
-	<string>Used to take photos for sharing</string>
-	
-	<key>NSPhotoLibraryUsageDescription</key>
-	<string>Used to select photos for sharing</string>
-	
-	<key>NSMicrophoneUsageDescription</key>
-	<string>Used for voice input</string>
-	-->
-	
 	<!-- Supported Interface Orientations -->
 	<key>UISupportedInterfaceOrientations</key>
 	<array>
@@ -119,13 +123,5 @@
 	<string>UIStatusBarStyleDefault</string>
 	<key>UIViewControllerBasedStatusBarAppearance</key>
 	<true/>
-	
-	<!-- Background Modes (if needed for future features) -->
-	<!--
-	<key>UIBackgroundModes</key>
-	<array>
-		<string>fetch</string>
-	</array>
-	-->
 </dict>
 </plist>
