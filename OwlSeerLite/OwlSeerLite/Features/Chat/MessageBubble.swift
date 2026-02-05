@@ -13,7 +13,7 @@ struct MessageBubble: View {
     let onReaction: (Message, MessageReaction?) -> Void
     
     @State private var showFlagMenu = false
-    @State private var showCopiedToast = false
+    @State private var showCopied = false
     
     var body: some View {
         HStack(alignment: .top, spacing: 8) {
@@ -65,7 +65,7 @@ struct MessageBubble: View {
                     .cornerRadius(4, corners: .topLeft)
                 
                 // 底部操作栏
-                HStack(spacing: 12) {
+                HStack(spacing: 16) {
                     Text(formattedTime)
                         .font(.caption2)
                         .foregroundStyle(.secondary)
@@ -78,7 +78,8 @@ struct MessageBubble: View {
                         onReaction(message, newReaction)
                     } label: {
                         Image(systemName: message.messageReaction == .like ? "hand.thumbsup.fill" : "hand.thumbsup")
-                            .font(.caption)
+                            .font(.system(size: 16))
+                            .frame(width: 32, height: 32)
                     }
                     .foregroundStyle(message.messageReaction == .like ? .green : .secondary)
                     
@@ -88,25 +89,40 @@ struct MessageBubble: View {
                         onReaction(message, newReaction)
                     } label: {
                         Image(systemName: message.messageReaction == .dislike ? "hand.thumbsdown.fill" : "hand.thumbsdown")
-                            .font(.caption)
+                            .font(.system(size: 16))
+                            .frame(width: 32, height: 32)
                     }
                     .foregroundStyle(message.messageReaction == .dislike ? .red : .secondary)
                     
                     // 复制按钮
                     Button {
                         UIPasteboard.general.string = message.content
+                        showCopied = true
+                        // 1.5秒后自动隐藏
+                        DispatchQueue.main.asyncAfter(deadline: .now() + 1.5) {
+                            showCopied = false
+                        }
                     } label: {
-                        Image(systemName: "doc.on.doc")
-                            .font(.caption)
+                        HStack(spacing: 4) {
+                            Image(systemName: showCopied ? "checkmark" : "doc.on.doc")
+                                .font(.system(size: 16))
+                            if showCopied {
+                                Text("已复制")
+                                    .font(.caption2)
+                            }
+                        }
+                        .frame(height: 32)
                     }
-                    .foregroundStyle(.secondary)
+                    .foregroundStyle(showCopied ? .green : .secondary)
+                    .animation(.easeInOut(duration: 0.2), value: showCopied)
                     
                     // 举报按钮 (App Store 合规必需)
                     Button {
                         onFlag(message)
                     } label: {
                         Image(systemName: message.isFlagged ? "flag.fill" : "flag")
-                            .font(.caption)
+                            .font(.system(size: 16))
+                            .frame(width: 32, height: 32)
                     }
                     .foregroundStyle(message.isFlagged ? .red : .secondary)
                 }
