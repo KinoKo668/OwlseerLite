@@ -15,7 +15,7 @@ final class GeminiProvider: LLMProviderProtocol {
     private let baseURL: String
     private let client = APIClient.shared
     
-    init(apiKey: String, baseURL: String? = nil, model: String = "gemini-1.5-flash") {
+    init(apiKey: String, baseURL: String? = nil, model: String = "gemini-2.5-flash") {
         self.apiKey = apiKey
         self.baseURL = baseURL ?? "https://generativelanguage.googleapis.com/v1beta"
         self.model = model

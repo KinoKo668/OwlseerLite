@@ -88,11 +88,11 @@ struct AppSettings: Codable {
                 "claude-3-haiku-20240307"
             ]
             case .gemini: return [
-                "gemini-3-pro",
-                "gemini-3-flash",
-                "gemini-2.5-pro",
                 "gemini-2.5-flash",
-                "gemini-2.0-flash"
+                "gemini-2.5-pro",
+                "gemini-2.0-flash",
+                "gemini-1.5-flash",
+                "gemini-1.5-pro"
             ]
             case .deepseek: return [
                 "deepseek-chat",
