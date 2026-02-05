@@ -8,7 +8,7 @@
 
 ### 技术准备
 
-- [ ] Apple Developer 账号已激活 ($99/年)
+- [ ✅ ] Apple Developer 账号已激活 ($99/年)
 - [ ] 在 Xcode 中配置 Signing & Capabilities（Team、证书、描述文件）
 - [ ] Xcode Archive 打包成功
 - [ ] 上传至 App Store Connect
