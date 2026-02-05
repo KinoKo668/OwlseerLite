@@ -1,0 +1,153 @@
+/* 
+  Localizable.strings
+  OwlSeerLite
+
+  Chinese Simplified localization
+*/
+
+// MARK: - Common
+"common.cancel" = "取消";
+"common.confirm" = "确定";
+"common.save" = "保存";
+"common.delete" = "删除";
+"common.error" = "错误";
+"common.success" = "成功";
+"common.loading" = "加载中...";
+"common.close" = "关闭";
+"common.done" = "完成";
+"common.hint" = "提示";
+"common.go_to_settings" = "前往设置";
+
+// MARK: - Tab Bar
+"tab.chat" = "对话";
+"tab.settings" = "设置";
+
+// MARK: - Chat
+"chat.title" = "OwlSeer";
+"chat.input_placeholder" = "输入消息...";
+"chat.new_conversation" = "新对话";
+"chat.welcome" = "你好，我是 OwlSeer";
+"chat.welcome_subtitle" = "你的 TikTok 创作助手";
+"chat.thinking" = "正在思考...";
+"chat.streaming" = "正在生成...";
+"chat.load_error" = "加载消息失败";
+"chat.suggestion_1" = "帮我写一个美食探店视频的开头 Hook";
+"chat.suggestion_2" = "最近有什么热门的 TikTok 趋势？";
+"chat.suggestion_3" = "把我的创意转成分镜脚本";
+
+// MARK: - Conversation List
+"conversation.history" = "历史对话";
+"conversation.empty" = "暂无对话记录";
+"conversation.start_new" = "开始新对话";
+
+// MARK: - Settings
+"settings.title" = "设置";
+"settings.ai_engine" = "AI 引擎";
+"settings.mode" = "模式";
+"settings.mode_free" = "免费体验";
+"settings.mode_custom" = "自定义 Key";
+"settings.daily_quota" = "每日 %d 条免费消息";
+"settings.free_mode_desc" = "使用预置 API，适合体验产品功能";
+"settings.configure_key" = "配置 API Key";
+"settings.configure_key_hint" = "请配置 API Key 以使用自定义模式";
+"settings.search_feature" = "搜索功能";
+"settings.web_search" = "联网搜索";
+"settings.search_enabled_hint" = "开启后 AI 可以联网查询实时信息";
+"settings.configure_search_key" = "配置搜索 Key";
+"settings.usage_statistics" = "使用统计";
+"settings.used_today" = "今日已用";
+"settings.reset_time" = "重置时间";
+"settings.about" = "关于";
+"settings.version" = "版本";
+"settings.privacy_policy" = "隐私政策";
+"settings.terms_of_service" = "使用条款";
+"settings.feedback_history" = "反馈记录";
+"settings.help_support" = "帮助与支持";
+"settings.language" = "语言";
+"settings.app_name" = "OwlSeer Lite - TikTok 创作助手";
+"settings.ai_disclaimer" = "AI 生成内容仅供参考";
+
+// MARK: - API Key Config
+"apikey.title" = "配置 API Key";
+"apikey.provider" = "服务商";
+"apikey.model" = "模型";
+"apikey.service_config" = "服务配置";
+"apikey.key_placeholder" = "API Key";
+"apikey.format_correct" = "格式正确";
+"apikey.format_incorrect" = "格式可能不正确";
+"apikey.get_key" = "获取 API Key";
+"apikey.advanced" = "高级设置";
+"apikey.base_url_placeholder" = "Base URL（可选）";
+"apikey.base_url_hint" = "留空使用默认地址：%@";
+"apikey.save_success" = "保存成功！";
+"apikey.save_failed" = "保存失败";
+"apikey.delete_key" = "删除已保存的 Key";
+"apikey.deleted" = "已删除";
+"apikey.search_title" = "搜索 API Key";
+"apikey.get_tavily_key" = "获取 Tavily API Key";
+"apikey.get_serpapi_key" = "获取 SerpAPI Key";
+
+// MARK: - Feedback
+"feedback.title" = "反馈";
+"feedback.content" = "反馈内容";
+"feedback.reason" = "反馈原因";
+"feedback.additional_info" = "补充信息";
+"feedback.additional_placeholder" = "补充说明（可选）";
+"feedback.submit" = "提交";
+"feedback.thank_you" = "感谢您的反馈";
+"feedback.thank_you_message" = "我们会认真审核您的反馈，持续改进服务质量。";
+"feedback.history" = "反馈记录";
+"feedback.no_records" = "暂无反馈记录";
+"feedback.no_records_hint" = "您提交的反馈会显示在这里";
+
+// MARK: - Feedback Reasons
+"feedback.reason.harmful" = "有害内容";
+"feedback.reason.harmful_desc" = "内容可能造成伤害";
+"feedback.reason.inaccurate" = "信息不准确";
+"feedback.reason.inaccurate_desc" = "AI 提供的信息不准确";
+"feedback.reason.inappropriate" = "不当内容";
+"feedback.reason.inappropriate_desc" = "内容不适当或冒犯性";
+"feedback.reason.spam" = "垃圾信息";
+"feedback.reason.spam_desc" = "垃圾信息或广告";
+"feedback.reason.other" = "其他";
+"feedback.reason.other_desc" = "其他原因";
+
+// MARK: - Errors
+"error.rate_limit" = "已达到今日免费额度上限";
+"error.rate_limit_hint" = "配置自定义 API Key 可解除限制";
+"error.no_llm_configured" = "未配置 AI 服务";
+"error.no_llm_configured_hint" = "请先在设置中配置 API Key";
+"error.auth_failed" = "API Key 无效";
+"error.auth_failed_hint" = "请检查设置中的 API Key";
+"error.network" = "网络连接失败";
+"error.network_hint" = "请检查网络连接后重试";
+
+// MARK: - Disclaimer
+"disclaimer.short" = "AI 生成内容仅供参考，不构成任何专业建议";
+"disclaimer.title" = "使用须知";
+"disclaimer.intro" = "OwlSeer Lite 是一款 AI 辅助创作工具，旨在为 TikTok 创作者提供内容灵感和创作建议。";
+"disclaimer.important" = "重要声明";
+"disclaimer.reference_only" = "内容仅供参考";
+"disclaimer.reference_only_desc" = "AI 生成的所有内容（包括但不限于文案、脚本、建议）仅供参考，不构成任何专业建议。";
+"disclaimer.user_responsibility" = "用户责任";
+"disclaimer.user_responsibility_desc" = "用户对使用本应用生成的内容负全部责任，包括确保内容符合平台规范和当地法律法规。";
+"disclaimer.data_security" = "数据安全";
+"disclaimer.data_security_desc" = "您的聊天记录仅存储在本地设备，API Key 安全存储于 iOS Keychain。";
+"disclaimer.ip" = "知识产权";
+"disclaimer.ip_desc" = "AI 生成的内容可能与现有作品存在相似性，请用户自行核实并尊重他人知识产权。";
+"disclaimer.understood" = "我已了解";
+"disclaimer.usage_tips" = "使用建议";
+"disclaimer.tip_1" = "将 AI 建议作为创作灵感的起点";
+"disclaimer.tip_2" = "根据实际情况调整和优化内容";
+"disclaimer.tip_3" = "确保最终发布内容符合平台社区规范";
+"disclaimer.tip_4" = "保持原创性，避免直接复制粘贴";
+
+// MARK: - Tool Names
+"tool.generate_hook" = "Hook 生成器";
+"tool.script_formatter" = "脚本格式化";
+"tool.trend_analyzer" = "趋势分析";
+"tool.web_search" = "联网搜索";
+"tool.calling" = "正在调用 %@...";
+
+// MARK: - Debug
+"debug.reset_usage" = "重置使用次数 (Debug)";

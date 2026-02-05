@@ -1,0 +1,153 @@
+/* 
+  Localizable.strings
+  OwlSeerLite
+
+  English localization
+*/
+
+// MARK: - Common
+"common.cancel" = "Cancel";
+"common.confirm" = "OK";
+"common.save" = "Save";
+"common.delete" = "Delete";
+"common.error" = "Error";
+"common.success" = "Success";
+"common.loading" = "Loading...";
+"common.close" = "Close";
+"common.done" = "Done";
+"common.hint" = "Hint";
+"common.go_to_settings" = "Go to Settings";
+
+// MARK: - Tab Bar
+"tab.chat" = "Chat";
+"tab.settings" = "Settings";
+
+// MARK: - Chat
+"chat.title" = "OwlSeer";
+"chat.input_placeholder" = "Type a message...";
+"chat.new_conversation" = "New Chat";
+"chat.welcome" = "Hello, I'm OwlSeer";
+"chat.welcome_subtitle" = "Your TikTok Content Assistant";
+"chat.thinking" = "Thinking...";
+"chat.streaming" = "Generating...";
+"chat.load_error" = "Failed to load messages";
+"chat.suggestion_1" = "Write an engaging hook for a food review video";
+"chat.suggestion_2" = "What are the trending TikTok topics?";
+"chat.suggestion_3" = "Turn my idea into a video script";
+
+// MARK: - Conversation List
+"conversation.history" = "Chat History";
+"conversation.empty" = "No conversations yet";
+"conversation.start_new" = "Start New Chat";
+
+// MARK: - Settings
+"settings.title" = "Settings";
+"settings.ai_engine" = "AI Engine";
+"settings.mode" = "Mode";
+"settings.mode_free" = "Free Trial";
+"settings.mode_custom" = "Custom Key";
+"settings.daily_quota" = "%d free messages daily";
+"settings.free_mode_desc" = "Using built-in API, great for trying out features";
+"settings.configure_key" = "Configure API Key";
+"settings.configure_key_hint" = "Please configure API Key to use custom mode";
+"settings.search_feature" = "Search";
+"settings.web_search" = "Web Search";
+"settings.search_enabled_hint" = "Enable AI to search the web for real-time information";
+"settings.configure_search_key" = "Configure Search Key";
+"settings.usage_statistics" = "Usage Statistics";
+"settings.used_today" = "Used Today";
+"settings.reset_time" = "Reset Time";
+"settings.about" = "About";
+"settings.version" = "Version";
+"settings.privacy_policy" = "Privacy Policy";
+"settings.terms_of_service" = "Terms of Service";
+"settings.feedback_history" = "Feedback History";
+"settings.help_support" = "Help & Support";
+"settings.language" = "Language";
+"settings.app_name" = "OwlSeer Lite - TikTok Content Assistant";
+"settings.ai_disclaimer" = "AI-generated content is for reference only";
+
+// MARK: - API Key Config
+"apikey.title" = "Configure API Key";
+"apikey.provider" = "Provider";
+"apikey.model" = "Model";
+"apikey.service_config" = "Service Configuration";
+"apikey.key_placeholder" = "API Key";
+"apikey.format_correct" = "Format looks correct";
+"apikey.format_incorrect" = "Format may be incorrect";
+"apikey.get_key" = "Get API Key";
+"apikey.advanced" = "Advanced Settings";
+"apikey.base_url_placeholder" = "Base URL (Optional)";
+"apikey.base_url_hint" = "Leave empty to use default: %@";
+"apikey.save_success" = "Saved successfully!";
+"apikey.save_failed" = "Save failed";
+"apikey.delete_key" = "Delete Saved Key";
+"apikey.deleted" = "Deleted";
+"apikey.search_title" = "Search API Key";
+"apikey.get_tavily_key" = "Get Tavily API Key";
+"apikey.get_serpapi_key" = "Get SerpAPI Key";
+
+// MARK: - Feedback
+"feedback.title" = "Feedback";
+"feedback.content" = "Feedback Content";
+"feedback.reason" = "Reason";
+"feedback.additional_info" = "Additional Information";
+"feedback.additional_placeholder" = "Additional details (optional)";
+"feedback.submit" = "Submit";
+"feedback.thank_you" = "Thank You for Your Feedback";
+"feedback.thank_you_message" = "We will carefully review your feedback to improve our service quality.";
+"feedback.history" = "Feedback History";
+"feedback.no_records" = "No feedback records";
+"feedback.no_records_hint" = "Your submitted feedback will appear here";
+
+// MARK: - Feedback Reasons
+"feedback.reason.harmful" = "Harmful Content";
+"feedback.reason.harmful_desc" = "Content that may cause harm";
+"feedback.reason.inaccurate" = "Inaccurate Information";
+"feedback.reason.inaccurate_desc" = "AI provided incorrect information";
+"feedback.reason.inappropriate" = "Inappropriate Content";
+"feedback.reason.inappropriate_desc" = "Content that is inappropriate or offensive";
+"feedback.reason.spam" = "Spam";
+"feedback.reason.spam_desc" = "Spam or advertising";
+"feedback.reason.other" = "Other";
+"feedback.reason.other_desc" = "Other reasons";
+
+// MARK: - Errors
+"error.rate_limit" = "Daily free quota reached";
+"error.rate_limit_hint" = "Configure a custom API Key to remove limits";
+"error.no_llm_configured" = "AI service not configured";
+"error.no_llm_configured_hint" = "Please configure an API Key in Settings";
+"error.auth_failed" = "Invalid API Key";
+"error.auth_failed_hint" = "Please check your API Key in Settings";
+"error.network" = "Network connection failed";
+"error.network_hint" = "Please check your connection and try again";
+
+// MARK: - Disclaimer
+"disclaimer.short" = "AI-generated content is for reference only and does not constitute professional advice";
+"disclaimer.title" = "Usage Notice";
+"disclaimer.intro" = "OwlSeer Lite is an AI-powered creation tool designed to provide content inspiration and suggestions for TikTok creators.";
+"disclaimer.important" = "Important Notice";
+"disclaimer.reference_only" = "Reference Only";
+"disclaimer.reference_only_desc" = "All AI-generated content (including but not limited to copy, scripts, and suggestions) is for reference purposes only and does not constitute professional advice.";
+"disclaimer.user_responsibility" = "User Responsibility";
+"disclaimer.user_responsibility_desc" = "Users are fully responsible for any content created using this app, including ensuring compliance with platform guidelines and local laws.";
+"disclaimer.data_security" = "Data Security";
+"disclaimer.data_security_desc" = "Your chat history is stored only on your local device. API keys are securely stored in iOS Keychain.";
+"disclaimer.ip" = "Intellectual Property";
+"disclaimer.ip_desc" = "AI-generated content may resemble existing works. Users should verify originality and respect others' intellectual property rights.";
+"disclaimer.understood" = "I Understand";
+"disclaimer.usage_tips" = "Usage Tips";
+"disclaimer.tip_1" = "Use AI suggestions as a starting point for creativity";
+"disclaimer.tip_2" = "Adjust and optimize content based on your needs";
+"disclaimer.tip_3" = "Ensure published content complies with platform guidelines";
+"disclaimer.tip_4" = "Maintain originality and avoid direct copying";
+
+// MARK: - Tool Names
+"tool.generate_hook" = "Hook Generator";
+"tool.script_formatter" = "Script Formatter";
+"tool.trend_analyzer" = "Trend Analyzer";
+"tool.web_search" = "Web Search";
+"tool.calling" = "Calling %@...";
+
+// MARK: - Debug
+"debug.reset_usage" = "Reset Usage (Debug)";
