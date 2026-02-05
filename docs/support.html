@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Support - OwlSeer Lite</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, sans-serif;
+            background: #0a0a0a;
+            color: #e5e5e5;
+            line-height: 1.8;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+        header {
+            margin-bottom: 40px;
+            padding-bottom: 20px;
+            border-bottom: 1px solid #333;
+        }
+        .back-link {
+            color: #66E39E;
+            text-decoration: none;
+            font-size: 0.9rem;
+        }
+        h1 {
+            font-size: 2rem;
+            margin: 20px 0 10px;
+            color: #fff;
+        }
+        h2 {
+            color: #66E39E;
+            font-size: 1.3rem;
+            margin: 32px 0 16px;
+        }
+        h3 {
+            color: #fff;
+            font-size: 1.1rem;
+            margin: 24px 0 12px;
+        }
+        p {
+            margin-bottom: 16px;
+            color: #ccc;
+        }
+        .contact-card {
+            background: rgba(102, 227, 158, 0.1);
+            border: 1px solid rgba(102, 227, 158, 0.3);
+            border-radius: 12px;
+            padding: 24px;
+            margin: 24px 0;
+            text-align: center;
+        }
+        .contact-card h3 {
+            margin-top: 0;
+            color: #66E39E;
+        }
+        .contact-card a {
+            color: #66E39E;
+            text-decoration: none;
+            font-size: 1.2rem;
+        }
+        .faq-item {
+            background: rgba(255, 255, 255, 0.05);
+            border-radius: 8px;
+            padding: 20px;
+            margin: 16px 0;
+        }
+        .faq-item h4 {
+            color: #fff;
+            margin-bottom: 12px;
+        }
+        .faq-item p {
+            margin-bottom: 0;
+        }
+        footer {
+            margin-top: 60px;
+            padding-top: 20px;
+            border-top: 1px solid #333;
+            text-align: center;
+            color: #666;
+        }
+        footer a {
+            color: #66E39E;
+            text-decoration: none;
+        }
+        code {
+            background: #1a1a1a;
+            padding: 2px 6px;
+            border-radius: 4px;
+            font-family: monospace;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <a href="index.html" class="back-link">← Back to Home</a>
+            <h1>Support Center</h1>
+        </header>
+
+        <main>
+            <div class="contact-card">
+                <h3>Need Help?</h3>
+                <p>We're here to help you get the most out of OwlSeer Lite.</p>
+                <a href="mailto:support@owlseer.app">support@owlseer.app</a>
+            </div>
+
+            <h2>Frequently Asked Questions</h2>
+
+            <div class="faq-item">
+                <h4>What is the daily message limit?</h4>
+                <p>Free users can send up to 10 messages per day. This limit resets at midnight (local time). To remove this limit, you can configure your own API key in Settings.</p>
+            </div>
+
+            <div class="faq-item">
+                <h4>How do I configure my own API key?</h4>
+                <p>Go to Settings → AI Engine → Select "Custom Key" → Configure API Key. You can get API keys from providers like OpenAI, Anthropic, Google (Gemini), DeepSeek, or Kimi (Moonshot).</p>
+            </div>
+
+            <div class="faq-item">
+                <h4>Is my data secure?</h4>
+                <p>Yes! Your chat history is stored locally on your device only. API keys are securely stored in iOS Keychain. We do not have access to your conversations or credentials.</p>
+            </div>
+
+            <div class="faq-item">
+                <h4>Can I use the app offline?</h4>
+                <p>The app requires an internet connection to generate AI responses. However, you can view your previous chat history offline.</p>
+            </div>
+
+            <div class="faq-item">
+                <h4>How do I delete my chat history?</h4>
+                <p>You can delete individual conversations by swiping left on them in the chat history view. To delete all data, you can uninstall and reinstall the app.</p>
+            </div>
+
+            <div class="faq-item">
+                <h4>Why is the AI response slow?</h4>
+                <p>Response time depends on your internet connection and the AI service provider's server load. If using free mode, peak hours may result in longer wait times.</p>
+            </div>
+
+            <div class="faq-item">
+                <h4>Can I change the app language?</h4>
+                <p>Yes! Go to Settings → Language to switch between English and Simplified Chinese.</p>
+            </div>
+
+            <div class="faq-item">
+                <h4>How do I report inappropriate AI responses?</h4>
+                <p>Tap the flag icon below any AI message to submit feedback. We take content quality seriously and review all reports.</p>
+            </div>
+
+            <h2>Troubleshooting</h2>
+
+            <h3>App crashes or freezes</h3>
+            <p>Try these steps:</p>
+            <ul style="margin-left: 24px; color: #ccc;">
+                <li>Force close and restart the app</li>
+                <li>Make sure you have the latest version installed</li>
+                <li>Restart your device</li>
+                <li>If the issue persists, contact support</li>
+            </ul>
+
+            <h3>API key not working</h3>
+            <p>Verify that:</p>
+            <ul style="margin-left: 24px; color: #ccc;">
+                <li>The API key is entered correctly (no extra spaces)</li>
+                <li>Your API key has sufficient credits/quota</li>
+                <li>You selected the correct provider</li>
+                <li>The API key hasn't expired</li>
+            </ul>
+
+            <h3>Cannot connect to AI service</h3>
+            <p>Check that:</p>
+            <ul style="margin-left: 24px; color: #ccc;">
+                <li>You have a stable internet connection</li>
+                <li>VPN is not blocking the connection (if applicable)</li>
+                <li>The AI service is not experiencing downtime</li>
+            </ul>
+
+            <h2>Feature Requests</h2>
+            <p>Have an idea to improve OwlSeer Lite? We'd love to hear from you! Send your suggestions to <a href="mailto:support@owlseer.app" style="color: #66E39E;">support@owlseer.app</a> with "Feature Request" in the subject line.</p>
+        </main>
+
+        <footer>
+            <p><a href="index.html">Home</a> · <a href="privacy.html">Privacy Policy</a> · <a href="terms.html">Terms of Service</a></p>
+            <p style="margin-top: 12px;">&copy; 2025 OwlSeer. All rights reserved.</p>
+        </footer>
+    </div>
+</body>
+</html>
