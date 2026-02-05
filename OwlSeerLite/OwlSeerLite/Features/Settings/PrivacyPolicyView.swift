@@ -133,7 +133,7 @@ struct PrivacyPolicyView: View {
                     Text("""
                     If you have any questions about this Privacy Policy, please contact us:
 
-                    • Email: support@owlseer.app
+                    • Email: tech@owlseer.com
                     • In-App: Settings > Feedback
                     """)
                 }

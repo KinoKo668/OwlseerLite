@@ -159,7 +159,7 @@ struct TermsOfServiceView: View {
                     Text("""
                     For questions about these Terms of Service, please contact us:
 
-                    • Email: support@owlseer.app
+                    • Email: tech@owlseer.com
                     • In-App: Settings > Feedback
 
                     We will respond to inquiries within a reasonable timeframe.
