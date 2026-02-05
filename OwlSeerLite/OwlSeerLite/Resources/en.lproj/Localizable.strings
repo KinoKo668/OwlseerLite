@@ -34,6 +34,7 @@
 "chat.suggestion_1" = "Write an engaging hook for a food review video";
 "chat.suggestion_2" = "What are the trending TikTok topics?";
 "chat.suggestion_3" = "Turn my idea into a video script";
+"chat.copied" = "Copied";
 
 // MARK: - Conversation List
 "conversation.history" = "Chat History";

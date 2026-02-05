@@ -34,6 +34,7 @@
 "chat.suggestion_1" = "帮我写一个美食探店视频的开头 Hook";
 "chat.suggestion_2" = "最近有什么热门的 TikTok 趋势？";
 "chat.suggestion_3" = "把我的创意转成分镜脚本";
+"chat.copied" = "已复制";
 
 // MARK: - Conversation List
 "conversation.history" = "历史对话";

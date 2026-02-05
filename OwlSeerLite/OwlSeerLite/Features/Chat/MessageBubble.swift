@@ -107,7 +107,7 @@ struct MessageBubble: View {
                             Image(systemName: showCopied ? "checkmark" : "doc.on.doc")
                                 .font(.system(size: 16))
                             if showCopied {
-                                Text("已复制")
+                                Text("chat.copied".localized)
                                     .font(.caption2)
                             }
                         }
