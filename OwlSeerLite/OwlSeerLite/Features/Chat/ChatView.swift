@@ -78,6 +78,11 @@ struct ChatView: View {
                     }
                 )
             }
+            .sheet(isPresented: $viewModel.showFeedbackSheet) {
+                if let message = viewModel.messageToFlag {
+                    FeedbackView(message: message)
+                }
+            }
             .task {
                 await viewModel.loadOrCreateConversation(modelContext: modelContext)
             }
